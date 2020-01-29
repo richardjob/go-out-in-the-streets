@@ -12,7 +12,7 @@ passport.serializeUser(User.serializeUser())
 passport.deserializeUser(User.deserializeUser())
 
 exports.getToken = function(user) {
-    return jwt.sign(user,config.secretkey)
+    return jwt.sign(user,process.env.secretOrKey)
 }
 
 exports.verifyUser = passport.authenticate('jwt',{session:false})
@@ -26,7 +26,7 @@ exports.verifyAdmin = (req,res,next)=>{
 
 let opts = {}
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken()
-opts.secretOrKey = config.secretkey
+opts.secretOrKey = process.env.secretOrKey
 
 exports.jwtPassport = passport.use(new jwtStrategy(opts, 
     (jwt_payload, done)=>{
