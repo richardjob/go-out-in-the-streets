@@ -9,7 +9,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const passport = require('passport')
 
-mongoose.connect(config.mongourl)
+mongoose.connect(process.env.MONGODB_URL,{useNewUrlParser:true})
 .then(()=>{
   console.log('Connected to Server'); 
 })
