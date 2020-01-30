@@ -39,6 +39,10 @@ app.use(bodyParser.json())
 app.use(passport.initialize())
 
 //Routes
+app.get('/',(req,res)=>{
+  res.statusCode = 200
+  res.sendFile(path.resolve(__dirname,'public','html','index.html'))
+})
 app.use('/outlets', indexRouter);
 app.use('/users', usersRouter);
 app.use('/favorites', favoritesRouter)

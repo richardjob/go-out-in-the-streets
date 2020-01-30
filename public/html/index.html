@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to GOS</title>
+    <style>
+        .center{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .title{
+            margin-top: 30px;
+            font-size: 100px;
+            color: green;
+            margin-bottom: 0px;
+        }
+
+        .subtile{
+            font-weight: 1000;
+            font-size: 20px;
+            margin-top: 0px;
+        }
+
+        button{
+            text-shadow: green;
+            font-size: 18px;
+            margin-top: 10px;
+            width: 100px;
+            height: 30px;
+            border-radius: 30%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <p class="title">GOS</p>
+        <p class="subtile">Go Out in the Streets</p>
+        <a href="/outlets" target="_blank"><button>Dive in >></button></a>
+    </div>
+    <div style="text-align: center;">
+        <h4 style="display: inline;">*Alert: </h4>
+        <p style="display: inline;">This is just a backend application. Test using tools like Postman or any REST API client.</p>
+    </div>
+    <h2>Project Description:</h2>
+    <ol>
+        <li>GOS is an online service that helps people to find unfamiliar but yet interesting places and venues within the city.</li>
+        <li>This will help people to save time, because they don’t need to browse the web or go through different apps and websites to find and decide the place they really want to go.</li>
+        <li>GOS helps interesting small places built with innovation to reach a large number of people.</li>
+        <li>GOS authenticates users with token based authentication using JWT (JSON Web Token)</li>
+        <li>The service manages the outlets database and users database in MongoDb (MongoDb Atlas), a noSQL database to provide a seamless experience for all users.</li>
+        <li>REST API Specification:</li>
+        <ul>
+            <li>The REST API of GOS is made possible with the help of Express</li>
+            <li>GOS is supported by 3 routes “/outlets” ,"/favorites" and “/users”. </li>
+            <li>The “/outlets” route supports the GET request and POST request only for the reviews</li>
+            <li>POST request for outlets is restricted only to the admin.</li>
+            <li>There is sub route “/outlets/:outletID” to handle GET request for specific outlets details.</li>
+            <li>The “/users” route manages the user signup, login, and logout</li>
+        </ul>
+    </ol>
+    <hr>
+    <p style="text-align: right; color: green;">Project By: Richard Job B</p>
+</body>
+
+</html>
