@@ -6,34 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to GOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .center{
+        .center {
             text-align: center;
             margin-bottom: 30px;
         }
-        
-        .title{
-            margin-top: 30px;
+
+        .title {
+            margin-top: -8px;
             font-size: 100px;
             color: green;
             margin-bottom: 0px;
         }
 
-        .subtile{
+        .subtile {
             font-weight: 1000;
             font-size: 20px;
             margin-top: 0px;
         }
 
-        button{
+        button {
             text-shadow: green;
             font-size: 18px;
-            margin-top: 10px;
+            margin-top: 5px;
             width: 100px;
             height: 30px;
             border-radius: 30%;
         }
 
+        .fa {
+            padding: 0px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .fa-linkedin {
+            background-color: white;
+            color: #0E76A8;
+            margin-bottom: 0px;
+            padding: 0px;
+
+        }
+
+        .fa-linkedin:hover {
+            background-color: white;
+            color: #0E76A8;
+            opacity: 0.7;
+        }
+
+        .fa-github {
+            background-color: white;
+            color: black;
+            margin-bottom: 0px;
+            padding: 0px;
+        }
+
+        .fa-github:hover {
+            background-color: white;
+            color: black;
+            opacity: 0.7;
+        }
     </style>
 </head>
 
@@ -45,15 +79,19 @@
     </div>
     <div style="text-align: center;">
         <h4 style="display: inline;">*Alert: </h4>
-        <p style="display: inline;">This is just a backend application. Test using tools like Postman or any REST API client.</p>
+        <p style="display: inline;">This is just a backend application. Test using tools like Postman or any REST API
+            client.</p>
     </div>
     <h2>Project Description:</h2>
-    <ol>
-        <li>GOS is an online service that helps people to find unfamiliar but yet interesting places and venues within the city.</li>
-        <li>This will help people to save time, because they don’t need to browse the web or go through different apps and websites to find and decide the place they really want to go.</li>
+    <ol style="font-size: 18px;">
+        <li>GOS is an online service that helps people to find unfamiliar but yet interesting places and venues within
+            the city.</li>
+        <li>This will help people to save time, because they don’t need to browse the web or go through different apps
+            and websites to find and decide the place they really want to go.</li>
         <li>GOS helps interesting small places built with innovation to reach a large number of people.</li>
         <li>GOS authenticates users with token based authentication using JWT (JSON Web Token)</li>
-        <li>The service manages the outlets database and users database in MongoDb (MongoDb Atlas), a noSQL database to provide a seamless experience for all users.</li>
+        <li>The service manages the outlets database and users database in MongoDb (MongoDb Atlas), a noSQL database to
+            provide a seamless experience for all users.</li>
         <li>REST API Specification:</li>
         <ul>
             <li>The REST API of GOS is made possible with the help of Express</li>
@@ -64,8 +102,13 @@
             <li>The “/users” route manages the user signup, login, and logout</li>
         </ul>
     </ol>
+
     <hr>
-    <p style="text-align: right; color: green;">Project By: Richard Job B</p>
+    <i style="font-size: xx-large;"><a href="https://www.linkedin.com/in/richard-job-b-87b976175/" target="_blank"
+        class="fa fa-linkedin"></a></i>
+    <i style="font-size: xx-large;"><a href="https://github.com/richardjob/go-out-in-the-streets.git" target="_blank"
+            class="fa fa-github"></a></i>
+    <i style="margin-top: 6px; float: right;; font-weight: 800; color: green;">Project by: Richard Job B</i>
 </body>
 
 </html>
