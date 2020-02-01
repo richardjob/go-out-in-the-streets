@@ -8,7 +8,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const passport = require('passport')
 
-const db = process.env.MONGODB_URL
+const db = process.env.MONGODB_URL // For testing replace with "mongodb://localhost:27017/gos" 
 
 mongoose.connect(db,{useNewUrlParser:true})
 .then(()=>{

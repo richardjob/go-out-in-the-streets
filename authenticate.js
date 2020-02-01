@@ -25,7 +25,7 @@ exports.verifyAdmin = (req,res,next)=>{
 
 let opts = {}
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken()
-opts.secretOrKey = process.env.secretOrKey
+opts.secretOrKey = process.env.secretOrKey //For testing replace with "1234-1234-1234-1234" 
 
 exports.jwtPassport = passport.use(new jwtStrategy(opts, 
     (jwt_payload, done)=>{
